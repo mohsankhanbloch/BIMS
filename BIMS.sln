@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIMS.Server", "BIMS.Server\BIMS.Server.csproj", "{028414B3-69F0-40EB-BF96-287CEE2493F8}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "bims.client", "bims.client\bims.client.esproj", "{C6E2FEAE-431E-4536-9122-A061FE6CE33E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{028414B3-69F0-40EB-BF96-287CEE2493F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{028414B3-69F0-40EB-BF96-287CEE2493F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{028414B3-69F0-40EB-BF96-287CEE2493F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{028414B3-69F0-40EB-BF96-287CEE2493F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6E2FEAE-431E-4536-9122-A061FE6CE33E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6E2FEAE-431E-4536-9122-A061FE6CE33E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6E2FEAE-431E-4536-9122-A061FE6CE33E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C6E2FEAE-431E-4536-9122-A061FE6CE33E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6E2FEAE-431E-4536-9122-A061FE6CE33E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6E2FEAE-431E-4536-9122-A061FE6CE33E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6BCA264E-00DD-41BE-8FF7-E512B3C336D2}
+	EndGlobalSection
+EndGlobal
