@@ -1,15 +1,27 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
+import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { FormsModule } from '@angular/forms';
+import { ComponentsModule } from './components/components.module';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app.routing';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AdminLayoutComponent
   ],
   imports: [
-    BrowserModule, HttpClientModule
+    BrowserAnimationsModule,
+    FormsModule,
+    HttpClientModule,
+    ComponentsModule,
+    RouterModule,
+    AppRoutingModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

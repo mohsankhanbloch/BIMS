@@ -18,14 +18,21 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "allowedCommonJsDependencies": ["hammerjs", "chart.js"],
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/favicon.ico"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/perfect-scrollbar/css/perfect-scrollbar.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              "node_modules/ngx-toastr/toastr.css",
+              "src/assets/scss/now-ui-dashboard.scss",
+              "src/assets/demo/demo.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/chart.js/dist/Chart.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -88,17 +95,25 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
+            "scripts": [
+              "node_modules/chart.js/dist/Chart.min.js"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/perfect-scrollbar/css/perfect-scrollbar.css",
+              "node_modules/ngx-toastr/toastr.css",
+              "src/assets/scss/now-ui-dashboard.scss",
+              "src/assets/demo/demo.css"
             ],
-            "scripts": []
+            "assets": [
+              "src/assets",
+              "src/favicon.ico"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "264adc83-dc5c-4bf4-93b2-05555c0d6462"
   }
 }
