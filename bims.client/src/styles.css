@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+.btn, .navbar .navbar-nav > a.btn {
+  border-width: 2px;
+  font-weight: 400;
+  font-size: 0.8571em;
+  line-height: 1.35em;
+  border: none;
+  margin: 5px 1px !important;
+  border-radius: 0.1875rem;
+  padding: 6px 8px !important;
+  cursor: pointer;
+  background-color: #888;
+  color: #FFFFFF;
+}

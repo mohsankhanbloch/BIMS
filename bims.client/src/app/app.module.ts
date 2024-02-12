@@ -8,11 +8,13 @@ import { ComponentsModule } from './components/components.module';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdminLayoutComponent
+    AdminLayoutComponent,
+    ProductComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -23,7 +25,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
     NgbModule,
   ],
-  providers: [],
+  providers: [{ provide: 'BASE_URL', useFactory: getBaseUrl }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function getBaseUrl() {
+  return document.getElementsByTagName('base')[0].href;
+}

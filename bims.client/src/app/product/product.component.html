@@ -1,0 +1,50 @@
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title"> <span class="pull-left">Products</span> <button class="btn btn-primary pull-right"> Add New</button></h4>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table">
+              <thead class=" text-primary">
+              <th>
+                Product Name
+              </th>
+              <th>
+                Quantity
+              </th>
+              <th>
+                Created Date
+              </th>
+              <th>
+                Action
+              </th>
+              </thead>
+              <tbody>
+                <tr *ngFor="let product of data">
+                  <td>
+                    {{product.name}}
+                  </td>
+                  <td>
+                    {{product.quantity}}
+                  </td>
+                  <td>
+                    {{product.createdDate | date}}
+                  </td>
+
+                  <td>
+                    <i class="now-ui-icons shopping_credit-card"></i>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

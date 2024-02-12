@@ -7,4 +7,10 @@
     <!-- Folder where production build objects will be placed -->
     <PublishAssetsDirectory>$(MSBuildProjectDirectory)\dist\bims.client\</PublishAssetsDirectory>
   </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\app\_services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\app\product\product.component.html~RF735573.TMP" />
+  </ItemGroup>
 </Project>
